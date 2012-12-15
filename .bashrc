@@ -37,5 +37,6 @@ PATH=/usr/local/sbin:/usr/local/bin:$HOME/.rvm/bin:$PATH # Add RVM to PATH for s
 #log useful command
 logCommand(){
 	echo "logging command into ~/.bashrc"
-	echo #1 >> ~/.bashrc
+	echo "#" $1 ":" $2 >> ~/.bashrc
 }
+
