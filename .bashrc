@@ -40,3 +40,7 @@ logCommand(){
 	echo "#" $1 ":" $2 >> ~/.bashrc
 }
 
+# man launchctl OR man launchd : checking the launch items
+# launchctl remove com.pqlabs.multitouch : remove that pqlabs item from launch
+# :
+# find stuff files : http://www.linuxhaxor.net/5-ways-to-search-for-files-using-the-terminal-in-linux/
