@@ -4,7 +4,7 @@ dexecute(){
   eval $1
 }
 
-alias ll="ls -lahG"
+alias ll="ls -lAhG"
 alias ...="cd ../.."
 alias ..="cd ../"
 
@@ -16,7 +16,7 @@ alias gp="dexecute 'git push origin master'"
 alias gs='dexecute "git status"'
 alias gi='dexecute "git add -p ."'
 #start foreman
-alias st='dexecute "foreman start"'
+alias fs='dexecute "foreman start"'
 #open the app from foreman
 alias oa='dexecute "open http://localhost:5000/"'
 #start apache
@@ -31,7 +31,7 @@ export GEM_EDITOR='subl'
 
 . /usr/local/bin/z.sh
 . ~/bin/nvm/nvm.sh
-PATH=/usr/local/sbin:/usr/local/bin:$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
+PATH=/usr/local/sbin:/usr/local/bin:$PATH # Add RVM to PATH for scripting
 #check who is using port 8081: sudo lsof -i :8081
 
 #log useful command
