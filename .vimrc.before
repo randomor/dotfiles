@@ -1,0 +1,24 @@
+let g:LargeFile=10
+set scrolloff=3
+set rnu
+set hidden "so new buffer could be opened on top of a modified buffer, set confirm to ask for confirm
+nnoremap <Space> za
+let mapleader = ","
+set pastetoggle=<F10>
+
+cmap w!! %!sudo tee > /dev/null % "Write current file with sudo access
+filetype plugin on
+let g:instant_markdown_autostart = 0
+" Switch between the last two files
+nnoremap <leader><leader> <c-^>
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
+function! TrimWhiteSpace()
+    %s/\s\+$//e
+endfunction
+autocmd BufWritePre     *.rb :call TrimWhiteSpace()
