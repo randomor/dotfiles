@@ -14,7 +14,7 @@ source /usr/local/share/chruby/auto.sh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="aMetheme"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -71,10 +71,12 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+#   export EDITOR='emacs'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='memacs'
 # fi
+
+export EDITOR='emacs'
 
 #detailed excute
 dexecute(){
@@ -89,6 +91,7 @@ alias stopapache='dexecute "sudo apachectl stop"'
 alias psql-start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 alias psql-stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 alias reload='dexecute "source ~/.zshrc"'
+alias memacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
