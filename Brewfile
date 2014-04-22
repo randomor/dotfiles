@@ -19,6 +19,8 @@ install redis
 install phantomjs
 
 install emacs
+install cask #for emacs package management
+
 install chruby
 install ruby-install
 install tig
