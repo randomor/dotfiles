@@ -1,9 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# Path for zjump, also needs ~/.z for data store 
-. ~/Dropbox/System/dotfiles/zjump/z.sh
-
 # chruby
 source /usr/local/share/chruby/chruby.sh
 # And to autoload ruby
