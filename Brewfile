@@ -22,6 +22,8 @@ install emacs
 #for emacs package management
 install cask
 
+#for Z jump util
+install z
 install chruby
 install ruby-install
 install tig
