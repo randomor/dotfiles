@@ -19,7 +19,8 @@ install redis
 install phantomjs
 
 install emacs
-install cask #for emacs package management
+#for emacs package management
+install cask
 
 install chruby
 install ruby-install
