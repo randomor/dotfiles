@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Path for zjump, also needs ~/.z for data store 
-. ~/Dropbox/Development/dotfiles/zjump/z.sh
+. ~/Dropbox/System/dotfiles/zjump/z.sh
 
 # chruby
 source /usr/local/share/chruby/chruby.sh
