@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+# import z, still need this even installed from brew
+. /usr/local/Cellar/z/1.8/etc/profile.d/z.sh
+
 # chruby
 source /usr/local/share/chruby/chruby.sh
 # And to autoload ruby

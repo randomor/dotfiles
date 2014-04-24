@@ -11,11 +11,11 @@ PWD = File.dirname(__FILE__)
 # `ln -s ~/.dotfiles/zsh ~/.oh-my-zsh`
 
 #Link my custom zsh theme
-system("ln -s #{PWD}/zsh/themes/aMetheme.zsh-theme ~/.oh-my-zsh/themes/aMetheme.zsh-theme")
+system("cp #{PWD}/zsh/themes/aMetheme.zsh-theme ~/.oh-my-zsh/themes/aMetheme.zsh-theme")
 
 #Link .zshrc
-# `mv ~/.zshrc ~/.zshrc.old`
-# system "ln -s #{PWD}/.zshrc ~/.zshrc"
+`mv ~/.zshrc ~/.zshrc.old`
+system "ln -s #{PWD}/.zshrc ~/.zshrc"
 
 #Create sublime text link
 system("ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl")
