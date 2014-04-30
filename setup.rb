@@ -22,3 +22,7 @@ PWD = File.dirname(__FILE__)
 
 #link .emacs.d
 system "ln -s #{PWD}/emacs/ ~/.emacs.d"
+
+#link .gitignore_global
+system "ln -s #{PWD}/.gitignore_global ~/.gitignore_global"
+system "git config --global core.excludesfile '~/.gitignore_global'"
