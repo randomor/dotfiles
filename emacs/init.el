@@ -1,6 +1,9 @@
 (require 'cask "/usr/local/Cellar/cask/0.6.0/cask.el")
 (cask-initialize)
 (require 'pallet)
+(require 'package)
+(add-to-list 'package-archives
+  '("melpa-stable" . "http://melpa-stable.milkbox.net/packages/") t)
 (add-to-list 'load-path "~/.emacs.d/plugins")
 ;; Fixing Terminal shift-up|down donot work issue: http://zurktech.blogspot.ch/2014/01/emacs-windmove-and-mavericks-terminalapp.html
 (define-key input-decode-map "\e[1;2A" [S-up])

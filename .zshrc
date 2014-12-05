@@ -1,8 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# import z, still need this even installed from brew
-. /usr/local/Cellar/z/1.8/etc/profile.d/z.sh
+# import z, still need this even installed from brew, not needed anymore since zshrc has it.
+#. /usr/local/Cellar/z/1.8/etc/profile.d/z.sh
 
 # chruby
 source /usr/local/share/chruby/chruby.sh
@@ -17,8 +17,17 @@ source /usr/local/share/chruby/auto.sh
 ZSH_THEME="aMetheme"
 
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# alias zshconfig="subl ~/.zshrc"
+# alias ohmyzsh="subl ~/.oh-my-zsh"
+alias phpunit="vendor/bin/phpunit"
+alias laravel="php artisan"
+alias xmysql="sudo /Applications/XAMPP/xamppfiles/share/mysql/mysql.server"
+alias x="sudo /Applications/XAMPP/xamppfiles/xampp"
+alias xstart="sudo /Applications/XAMPP/xamppfiles/xampp startapache; sudo /Applications/XAMPP/xamppfiles/xampp startmysql"
+alias xstop="sudo /Applications/XAMPP/xamppfiles/xampp stop"
+alias gre="git pull --rebase"
+alias dumpclass="composer dump-autoload"
+alias whichphp="lsof -i tcp:8000 | grep php | awk '{ print $2 }'"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -57,7 +66,7 @@ ZSH_THEME="aMetheme"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git osx z)
 
 source $ZSH/oh-my-zsh.sh
 

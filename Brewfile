@@ -31,3 +31,4 @@ install git-cal
 install git-flow
 install node
 install npm
+install tree
