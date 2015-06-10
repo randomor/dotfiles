@@ -1,6 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+export DB_BRANCH=master
+
 # import z, still need this even installed from brew, not needed anymore since zshrc has it.
 #. /usr/local/Cellar/z/1.8/etc/profile.d/z.sh
 
@@ -16,10 +18,13 @@ source /usr/local/share/chruby/auto.sh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="aMetheme"
 
+export PG_DATA="/usr/local/var/postgres"
+
 # Example aliases
-# alias zshconfig="subl ~/.zshrc"
-# alias ohmyzsh="subl ~/.oh-my-zsh"
+alias zshconfig="subl ~/.zshrc"
+alias ohmyzsh="subl ~/.oh-my-zsh"
 alias phpunit="vendor/bin/phpunit"
+alias sequelize="node_modules/.bin/sequelize"
 alias laravel="php artisan"
 alias xmysql="sudo /Applications/XAMPP/xamppfiles/share/mysql/mysql.server"
 alias x="sudo /Applications/XAMPP/xamppfiles/xampp"
@@ -66,7 +71,7 @@ alias whichphp="lsof -i tcp:8000 | grep php | awk '{ print $2 }'"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx z)
+plugins=(git osx z github gitignore postgres)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,8 +102,8 @@ alias startapache='dexecute "sudo apachectl start"'
 alias stopapache='dexecute "sudo apachectl stop"'
 
 # Start psql with a daemon, no deamon: postgres -D /usr/local/var/postgres
-alias psql-start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
-alias psql-stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+# alias psql-start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+# alias psql-stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 alias reload='dexecute "source ~/.zshrc"'
 alias memacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
 
