@@ -25,7 +25,7 @@
 ;;(menu-bar-mode t)
 ;;Forcing to load the theme so the following line is not needed anymore.
 ;;(enable-theme 'solarized-dark)
-(load-theme 'solarized-dark t) 
+(load-theme 'solarized t) 
 ;; trucate even even when screen is split into multiple windows
 (setq-default truncate-partial-width-windows nil)
  

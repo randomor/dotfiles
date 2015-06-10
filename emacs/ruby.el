@@ -1,4 +1,9 @@
-(setq enh-ruby-program "/Users/shaomengzhang/.rbenv/versions/2.1.1/bin/ruby")
+; No need to run the following.
+; (setq enh-ruby-program (concat
+;    (getenv "RUBY_ROOT")
+;    "/bin/ruby"
+;   ))
+
 (autoload 'enh-ruby-mode "enh-ruby-mode" "Major mode for ruby files" t)
 (add-to-list 'auto-mode-alist '("\\.rb$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.rake$" . enh-ruby-mode))
