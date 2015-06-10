@@ -32,3 +32,4 @@ install git-flow
 install node
 install npm
 install tree
+install aspell --with-lang-en
