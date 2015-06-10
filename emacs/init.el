@@ -14,11 +14,37 @@
 
 ;;ido everywhere!
 (ido-mode 1)
+(electric-pair-mode 1)
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
 
 ;;auto-indent
+(setq tab-width 4) ; or any other preferred value
+(defvaralias 'c-basic-offset 'tab-width)
+(defvaralias 'cperl-indent-level 'tab-width)
 (define-key global-map (kbd "RET") 'newline-and-indent)
+
+;;For web-mode
+(defun my-web-mode-hook ()
+    "Hooks for Web mode."
+      (setq web-mode-markup-indent-offset 2)
+      (setq web-mode-code-indent-offset 2)
+      (setq web-mode-css-indent-offset 2)
+      (setq jsx-indent-level 2)
+      (auto-complete-mode 1)
+      (setq web-mode-ac-sources-alist
+            '(("css" . (ac-source-words-in-buffer ac-source-css-property))
+              ("html" . (ac-source-words-in-buffer ac-source-abbrev))
+              ("jsx" . (ac-source-words-in-buffer ac-source-words-in-same-mode-buffers))))
+      )
+(add-hook 'web-mode-hook  'my-web-mode-hook)
+(add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.js$" . web-mode))
+(defadvice web-mode-highlight-part (around tweak-jsx activate)
+    (if (equal web-mode-content-type "jsx")
+              (let ((web-mode-enable-part-face nil))
+                        ad-do-it)
+          ad-do-it))
 
 ;;For coffee-mode
 ;; automatically clean up bad whitespace
