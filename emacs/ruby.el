@@ -47,6 +47,25 @@ of FILE in the current directory, suitable for creation"
                    (file-relative-name (buffer-file-name) (get-closest-gemfile-root))
                    (line-number-at-pos)
                    ) t))
+(defun open-line-in (app)
+  (interactive "sApp:")
+  (shell-command (format "%s %s"
+                  app
+                  (current-file-with-line-number)))
+  )
+(defun open-file-in (app)
+  (interactive "sApp:")
+  (shell-command (format "%s %s"
+                    app
+                    (buffer-file-name))))
+
+(defun current-file-with-line-number ()
+  (format "%s:%s"
+          (buffer-file-name)
+          (line-number-at-pos)
+    )
+  )
+
 
 (add-hook 'enh-ruby-mode-hook
           (lambda ()
