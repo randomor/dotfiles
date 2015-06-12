@@ -183,6 +183,7 @@
 (load "~/.emacs.d/ruby")
 (load "~/.emacs.d/common-setup")
 (load "~/.emacs.d/flyspell-setup")
+(load "~/.emacs.d/markdown-setup")
 
 
 (custom-set-faces
