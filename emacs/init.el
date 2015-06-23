@@ -167,7 +167,6 @@
 
 (global-set-key (kbd "M-;") 'comment-or-uncomment-region-or-line)
 (global-set-key (kbd "M-o") 'other-window)
-(global-set-key (kbd "M-RET") 'projectile-find-file)
 (global-set-key (kbd "C-z") 'repeat)
 (global-set-key (kbd "C-x C-r") 'ido-display-buffer)
 (global-set-key (kbd "<f6>") 'revert-this-buffer)
@@ -184,6 +183,7 @@
 (load "~/.emacs.d/common-setup")
 (load "~/.emacs.d/flyspell-setup")
 (load "~/.emacs.d/markdown-setup")
+(load "~/.emacs.d/my-keys")
 
 
 (custom-set-faces
