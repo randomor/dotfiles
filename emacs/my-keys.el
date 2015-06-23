@@ -2,6 +2,8 @@
 (defvar my-keys-minor-mode-map (make-keymap) "my-keys-minor-mode keymap.")
 
 (define-key my-keys-minor-mode-map (kbd "C-c RET") 'projectile-switch-to-buffer)
+(define-key my-keys-minor-mode-map (kbd "M-RET") 'projectile-find-file)
+(define-key my-keys-minor-mode-map (kbd "C-c C-r") 'projectile-invalidate-cache)
 
 (define-minor-mode my-keys-minor-mode
   "A minor mode so that my key settings override annoying major modes."
