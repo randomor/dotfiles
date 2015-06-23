@@ -4,6 +4,8 @@
 ;    "/bin/ruby"
 ;   ))
 
+; Use robe-mode to do `M-,` or `M-.` to jump into source.
+
 (autoload 'enh-ruby-mode "enh-ruby-mode" "Major mode for ruby files" t)
 (add-to-list 'auto-mode-alist '("\\.rb$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.rake$" . enh-ruby-mode))
@@ -53,7 +55,7 @@ of FILE in the current directory, suitable for creation"
                   app
                   (current-file-with-line-number)))
   )
-(defun open-file-in (app)
+(defun open-in (app)
   (interactive "sApp:")
   (shell-command (format "%s %s"
                     app
