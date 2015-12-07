@@ -16,7 +16,7 @@ source /usr/local/share/chruby/auto.sh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="minimal"
+ZSH_THEME="aMetheme"
 
 export PG_DATA="/usr/local/var/postgres"
 export ANDROID_HOME=~/Library/Android/sdk
