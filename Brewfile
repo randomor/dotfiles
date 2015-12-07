@@ -1,13 +1,14 @@
 # Install development dependencies on Mac OS X using Homebrew (http://mxcl.github.com/homebrew)
 
 # ensure that Homebrew's sources are up to date
-update
+# update
 
 # add this repo to Homebrew's sources
-tap homebrew/versions
+#tap homebrew/versions
 
 # you probably already have git installed; ensure that it is the latest version
 install git
+install hub
 
 # install the PostgreSQL database
 install postgresql
@@ -16,7 +17,7 @@ install postgresql
 install redis
 
 # install headless Javascript testing library
-install phantomjs
+# install phantomjs
 
 install emacs
 #for emacs package management
@@ -29,7 +30,11 @@ install ruby-install
 install tig
 install git-cal
 install git-flow
-install node
-install npm
+install nvm
 install tree
 install aspell --with-lang-en
+
+#for resizing window
+cask install atom
+cask install spectacle
+puts 'remember to open spectacle to set it up'
