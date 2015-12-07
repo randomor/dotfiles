@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-export DB_BRANCH=master
+# export DB_BRANCH=master
 
 # import z, still need this even installed from brew, not needed anymore since zshrc has it.
 #. /usr/local/Cellar/z/1.8/etc/profile.d/z.sh
@@ -16,13 +16,17 @@ source /usr/local/share/chruby/auto.sh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="aMetheme"
+ZSH_THEME="minimal"
 
 export PG_DATA="/usr/local/var/postgres"
+export ANDROID_HOME=~/Library/Android/sdk
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 # Example aliases
-alias zshconfig="subl ~/.zshrc"
-alias ohmyzsh="subl ~/.oh-my-zsh"
+eval "$(hub alias -s)"
+alias zshconfig="atom ~/.zshrc"
+alias ohmyzsh="atom ~/.oh-my-zsh"
 alias phpunit="vendor/bin/phpunit"
 alias sequelize="node_modules/.bin/sequelize"
 alias laravel="php artisan"
@@ -71,7 +75,7 @@ alias whichphp="lsof -i tcp:8000 | grep php | awk '{ print $2 }'"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx z github gitignore postgres)
+plugins=(git osx z gitignore postgres)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -112,3 +116,6 @@ alias memacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+export NVM_DIR="/Users/shao/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
