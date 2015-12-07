@@ -22,8 +22,6 @@
 (depends-on "findr")
 (depends-on "flycheck")
 (depends-on "floobits")
-(depends-on "git-commit-mode")
-(depends-on "git-rebase-mode")
 (depends-on "grizzl")
 (depends-on "helm")
 (depends-on "highlight")
@@ -63,4 +61,3 @@
 (depends-on "wrap-region")
 (depends-on "yaml-mode")
 (depends-on "markdown-mode")
-(depends-on "gp-md")
