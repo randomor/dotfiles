@@ -7,4 +7,4 @@
 1. Set the default terminal theme, also change the default font size to 13pt, and click `Use Option as Meta key`
 1. Setup spectacle once it's installed from setup.rb
 1. For emacs: `cd ~/.emacs.d; cask`
-1. Setup git config, `user.name, user.email`, push setting to `git config --global push.default matching` and then cache github login and pw: https://help.github.com/articles/caching-your-github-password-in-git/
+1. Setup cache github login and pw: https://help.github.com/articles/caching-your-github-password-in-git/

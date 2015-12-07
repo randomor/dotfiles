@@ -7,7 +7,7 @@ PWD = File.dirname(__FILE__)
 `brew update`
 `brew tap homebrew/versions`
 `brew install git hub postgresql redis cask z ag chruby ruby-install tig git-cal git-flow nvm tree aspell --with-lang-en`
-`brew cask install atom spectacle`
+`brew cask install atom spectacle elixir`
 
 #Install Oh-my-zsh
 `curl -L http://install.ohmyz.sh | sh`
@@ -31,3 +31,4 @@ system("ln -s #{PWD}/.gitignore_global ~/.gitignore_global") unless File.exists?
 system "git config --global core.excludesfile '~/.gitignore_global'"
 `git config --global user.name 'Shaomeng Zhang'`
 `git config --global user.email randomor@gmail.com`
+`git config --global push.default matching`
