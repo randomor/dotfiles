@@ -31,4 +31,4 @@ system("ln -s #{PWD}/.gitignore_global ~/.gitignore_global") unless File.exists?
 system "git config --global core.excludesfile '~/.gitignore_global'"
 `git config --global user.name 'Shaomeng Zhang'`
 `git config --global user.email randomor@gmail.com`
-`git config --global push.default matching`
+`git config --global push.default simple`
