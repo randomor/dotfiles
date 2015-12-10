@@ -21,7 +21,7 @@ ZSH_THEME="aMetheme"
 export PG_DATA="/usr/local/var/postgres"
 export ANDROID_HOME=~/Library/Android/sdk
 export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+source $NVM_DIR/nvm.sh
 
 # Example aliases
 eval "$(hub alias -s)"
@@ -116,6 +116,3 @@ alias memacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-export NVM_DIR="/Users/shao/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
