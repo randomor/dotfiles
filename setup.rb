@@ -9,6 +9,9 @@ PWD = File.dirname(__FILE__)
 `brew install git hub postgresql redis cask z ag chruby ruby-install tig git-cal git-flow nvm tree aspell --with-lang-en`
 `brew cask install atom spectacle elixir`
 
+# install nvm
+`curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash`
+
 #Install Oh-my-zsh
 `curl -L http://install.ohmyz.sh | sh`
 `ln -s ~/.dotfiles/zsh ~/.oh-my-zsh`
