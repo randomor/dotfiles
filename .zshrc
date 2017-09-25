@@ -3,9 +3,6 @@ export ZSH=$HOME/.oh-my-zsh
 
 # export DB_BRANCH=master
 
-# import z, still need this even installed from brew, not needed anymore since zshrc has it.
-#. /usr/local/Cellar/z/1.8/etc/profile.d/z.sh
-
 # chruby
 source /usr/local/share/chruby/chruby.sh
 # And to autoload ruby
@@ -25,8 +22,8 @@ source $NVM_DIR/nvm.sh
 
 # Example aliases
 eval "$(hub alias -s)"
-alias zshconfig="atom ~/.zshrc"
-alias ohmyzsh="atom ~/.oh-my-zsh"
+alias zshconfig="code ~/.zshrc"
+alias ohmyzsh="code ~/.oh-my-zsh"
 alias phpunit="vendor/bin/phpunit"
 alias sequelize="node_modules/.bin/sequelize"
 alias laravel="php artisan"

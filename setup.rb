@@ -5,9 +5,10 @@ PWD = File.dirname(__FILE__)
 #`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
 `brew update`
-`brew tap homebrew/versions`
-`brew install git hub postgresql redis cask z ag chruby ruby-install tig git-cal git-flow nvm tree aspell --with-lang-en`
-`brew cask install atom spectacle elixir`
+`brew tap homebrew/core`
+`brew install git hub postgresql redis cask z ag ruby-install tig git-cal git-flow tree aspell --with-lang-en`
+`brew install chruby --HEAD`
+`brew cask install spectacle elixir`
 
 # install nvm
 `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash`
