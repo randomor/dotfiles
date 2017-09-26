@@ -30,6 +30,8 @@ system "ln -s #{PWD}/.zshrc ~/.zshrc"
 #link .emacs.d
 system "ln -s $PWD/emacs/ ~/.emacs.d"
 
+system("ln -s #{PWD}/.hyper.js ~/.hyper.js") unless File.exists?('~/.hyper.js')
+
 #link .gitignore_global
 system("ln -s #{PWD}/.gitignore_global ~/.gitignore_global") unless File.exists?('~/.gitignore_global')
 system "git config --global core.excludesfile '~/.gitignore_global'"

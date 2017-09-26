@@ -1,7 +1,7 @@
 1. Install 1Password
 1. Set `Keyboard Repeat` to fast and `Delay till Repeat` to low in `System Preferences`
-1. Download and Install [VS Code](https://code.visualstudio.com/docs?dv=osx)
-1. Download and Install [Hyper Term](https://hyper.is/)
+1. Download and Install [VS Code](https://code.visualstudio.com/docs?dv=osx) and setup using `settings.json`
+1. Download and Install [Hyper Term](https://hyper.is/) and setup using `.hyper.js`
 1. Setup Capital Locks to Control key.
 1. Install Dropbox
 1. `cd $PWD`
