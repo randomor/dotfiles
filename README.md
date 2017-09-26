@@ -15,5 +15,8 @@
 
 ### Optional
 1. Install terminal themes
+1. Install Node `nvm install`
+1. Install Ruby `ruby-install`
 1. `brew install mysql elasticsearch`
-1. Install Sequel Pro
+1. Install Sequel Pro, update query theme.
+1. Login into NPM
